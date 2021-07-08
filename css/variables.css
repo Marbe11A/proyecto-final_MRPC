@@ -1,0 +1,28 @@
+variables.css
+/*Aquí encontrras las variables del sistema
+
+
+
+/* ============== COLORES*/
+
+:root{
+
+--white:#fafafa;
+--black:#101518;
+--primary-color:#F04E6D;
+
+/* ======= Tipografias*/
+
+--h1: 30px;
+--h2: 20px;
+--h3: 16px;
+--p: 16px;
+
+/*==== Especiado*/
+
+--space-1: 8PX;
+--space-2: 16px;
+--space-3: 24px;
+	
+};
+
