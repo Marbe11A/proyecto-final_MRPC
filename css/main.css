@@ -2,8 +2,18 @@
 
 html{
 	background-color: black;
+	font-family: Roboto + Mono: wght @ 200;
 }
 
 h1{
-	color: var();
+	color: var(--white);
+	font-size: var(--h1);
+}
+
+button{
+	background-color: var(--primary-color);
+	color: var(--white);
+	padding: var(--space-2);
+	border-radius: var(--radius);
+	display: inline;
 }
