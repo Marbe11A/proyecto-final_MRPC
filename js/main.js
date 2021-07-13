@@ -22,31 +22,32 @@ var user={
 //variables globales
 var  flag_saludo = false ;
 var  flag_name = false ;
-const  random  =  Math . piso ( Matemáticas . aleatorio ( )  *  comienza . longitud ) ;
+const  random  =  Math.floor(Math.random() * starts.length);
 
 var flags={
 	"saludo": false,
 	"name": false,
-	"age":false
+	"age":false,
+	"nicknames":false
 }
 
-function panfilo ( res ){
+function panfilo(res){
 
 	// El saludo
 	if ( !flags.saludo ) {
 
-		consola . log ( comienza [ aleatorio ] + ", que tal .." ) ;
-		flag_saludo = true ;
+		console.log (starts[random]+", que pasop .." );
+		flags.saludo = true ;
 
-	} else  if ( flags.name ) {
+	} else  if (flags.name ) {
 
-		usuario . nombre = res ;
-		consola . de registro ( aperturas [ aleatorio ] + usuario . nombre ) ;
+		usuario.name = res ;
+		console.log (starts[ random ] + " " +user.name) ;
 
-	} else  if ( ! nombre de usuario . || nombre_de_bandera == falso ) {  
+	} else  if ( !user.name || flags.name == false ) {  
 
-		consola . log ( "Hola, como te llamas?" ) ;
-		flag_name = true ;
+		console.log ( "hola, crayola" ) ;
+		flags.name = true ;
 
 	}
 	
