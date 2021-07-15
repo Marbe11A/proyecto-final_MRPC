@@ -13,7 +13,7 @@ var chat=["woow", ["super", "que bien", "no"], "como crees"];
 //objetos
 
 var user={ 
-	"name";"",
+	"name":"",
 	"nicknames":"",
 	"age":0,
 	"second_name":""
