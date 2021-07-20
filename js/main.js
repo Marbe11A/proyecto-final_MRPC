@@ -1,112 +1,116 @@
-// main.js Tipos de variables
+// main.js 
+//panfilo the bot
 
-var texto = "hola como estas"; //texto 
-var x = 20; //numericas
-var flag= true; //boolean
 
-// #panfilo
+//----declarar var / validar / operación recurrente
 
-// Objeto maestro
-var abc={
-	starts=["hola crayola", "que pasop", "hey", "hello"];
-	random  =  Math.floor(Math.random() * starts.length);
-	flags:{"saludo": false, "name": false, "age":false, "nicknames":false};
-	user={"name":"", "nicknames":"", "age":0}
+for (var i = 1; i <= 2; i++) {
+	console.log(i);
+	//Recuerden que pueden usar un if aquí dentro
 }
 
-//arreglos
-var starts=["hola crayola", "que pasop", "hey", "hello"];
-var chat=["woow", ["super", "que bien", "no"], "como crees"];
-const random  =  Math.floor(Math.random() * starts.length);
+//Este es un while y su formato.
+var x=0;
 
+do{
 
-//objetos
+console.log(x);
+x= x + 1;
 
-var user={ 
-	"name":"",
-	"nicknames":"",
-	"age":0,
-	"second_name":""
-}
+}while(x<5);
 
-//variables globales
-var  flag_saludo = false ;
-var  flag_name = false ;
-const  random  =  Math.floor(Math.random() * starts.length);
+//function panfilo(res){
 
-var flags={
-	"saludo": false,
-	"name": false,
-	"age":false,
-	"nicknames":false
-}
+//FUNCION
+	flags=abc.flags;
+	starts=abc.starts;
+	user=abc.user;
+
+var r_element=document.getElementById("respond")
 
 function panfilo(res){
 
+	
 	// El saludo
-	if ( !flags.saludo ) {
+	if (!flags.saludo) {
+
 		// reasignación
 		//----
 		// conversación
-		console.log (starts[random]+", que pasop .." );
-		console.log ("¿Como te llamas?");
-		//indicador
-		flags.saludo = true ;
-	}
+		r_element.innerHTML = starts[abc.random]+", que tal.." + "¿Como te llamas?";
+		// indicador
+		flags.saludo=true;
 
-	} else  if (!flags.name ) {
+		
 
-		//reasignación
-		usuario.name = res ;
+	}else if(!flags.name){
+		
+		// reasignación
+		user.name=res; 
 
-			//conversación
-		console.log (starts[ random ] + " " +user.name);
-		console.log("Cual es tu edad")
+		if (user.name) {
 
-		//indicador
-		flags.name=true;
-	
-	{else }
-	console.log("no me has dado tu nombre")
+			// conversación	
+			console.log(starts[random]+" "+user.name);
+			console.log("Cual es tu edad?");
 
-	}
+			// indicador
+			flags.name=true;
 
-{else if(!flags.age)}
+		} else {
+
+			r_element.innerHTML = "no me haz dado tu nombre";
+
+		}
+
+
+}else if(!flags.age){
+
 		//reasignación
 		user.age=res;
 
+		if (user.age) {
+
 		//conversación
-				console.log("Wow,"+user.name+" "+user.age+"anioos");
-				console.log("Tienes algun apodo?")
+				console.log("Wow,"+user.name+". "+user.age+" anioos");
+				console.log("Tienes algun apodo?");
 
 				//indicador
 				flags.name=true;
 
-{else }
-	console.log("No me has dado tu edad")
+} else {
+			console.log("No me has dado tu edad");
+		}
 
-{else if(!flags.nicknames)}
+}else if(!flags.nicknames){
 
-	//reasignación
-		user.age=res;
+	// reasignación
+		user.nicknames=res;
 
-		if (user.nicknames)
+		if (user.nicknames) {
 
 		//conversación
-		console.log("oh ya veo, " + user.nicknames)
+		console.log("oh ya veo, " + user.nicknames);
 
 		//indicador
 		flags.nicknames=true;
 
-{else }
-	console.log("No me has dado tu apodo")
+} else {
+
+			console.log("No me haz dado tu apodo")
+
+		}
+
+}else if(flags.nicknames||flags.name||flags.age|| flags.saludo){
+
+			console.log("======================")
+			console.log("Esta fue una buena charla, me dio gusto conocerte, me tengo que ir. BYE")
+			console.log("======================")
+	
+	}
 
 
-{else if (flags.nicknames || flags.name || flags.age ||  flags.saludo)}
-		console.log ("==================")
-		console.log ("Esta fue una buena charla, me io gusto conocerte, me tengo que ir, Adios")
-		console.log ("==================")
-
+}
 
 
 

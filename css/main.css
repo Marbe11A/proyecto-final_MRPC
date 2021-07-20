@@ -1,7 +1,7 @@
 @import "variables.css";
 
 html{
-	background-color: black;
+	background-color: var(--black);
 	font-family: Roboto + Mono: wght @ 200;
 }
 
@@ -17,3 +17,23 @@ button{
 	border-radius: var(--radius);
 	display: inline;
 }
+
+.carita_panfilo{
+	font-size: 100px;
+}
+
+#respond{
+	font-size: 100px;
+	color:  var(--white);
+	font-weight: 700;
+}
+
+.carita_panfilo, #respond{
+	text-align: center;
+}
+
+#respond_user{
+	height: 50px;
+	width: 510px;
+}
+
