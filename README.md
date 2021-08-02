@@ -50,3 +50,7 @@ c)Dirección electrónica oficial de la UNID en general
 d)Link hacia "BDU" Biblioteca digital Unid
 e)Link hacia la plataforma NEO
 f)Link hacia banner
+
+Estructura:
+https://miro.com/app/board/o9J_l4b4k8I=/
+
