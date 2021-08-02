@@ -1,6 +1,37 @@
 // main.js 
 //panfilo the bot
 
+var imagenes = ["imagenes/img1.jpg", "imagenes/img2.jpg", "imagenes/img3.jpg"],
+	cont = 0;
+
+function carrousel(contenedor){
+	contenedor.addEventListener('click', e => {
+		lef atras = contenedor.querrySelector('.atras'),
+			adelante = contenedor.querrySelector('.adelante'),
+			img = contender.querrySelector('img'),
+			tgt = e.target; 
+		if(tgt == atras){
+			if(cont > 0){
+				img.src = imagenes[cont - 1];
+				cont --;
+			} else {
+				img.src = imagenes[imagenes.length -1];
+				cont = imagenes.length -1;
+			}
+		} else if(tgt == adelante){
+			if(cont > imagenes.length -1){
+				img.src = imagenes[cont + 1];
+				cont ++;
+			} else {
+				img.src = imagenes[0];
+				cont = 0;
+		}
+
+document.addEventListener("DOMContentLoaded", () => {
+	lef contenedor = document.querrySelector('.contenedor');
+
+	carrousel(contenedor);
+
 
 //----declarar var / validar / operación recurrente
 
@@ -59,7 +90,7 @@ function panfilo(res){
 
 		} else {
 
-			r_element.innerHTML = "no me haz dado tu nombre";
+			r_element.innerHTML = "no me has dado tu nombre";
 
 		}
 
@@ -97,7 +128,7 @@ function panfilo(res){
 
 } else {
 
-			console.log("No me haz dado tu apodo")
+			console.log("No me has dado tu apodo")
 
 		}
 
@@ -111,6 +142,7 @@ function panfilo(res){
 
 
 }
+
 
 
 

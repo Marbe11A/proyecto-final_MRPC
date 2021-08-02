@@ -1,12 +1,12 @@
 @import "variables.css";
 
 html{
-	background-color: var(--black);
+	background-color: var(--yellow);
 	font-family: Roboto + Mono: wght @ 200;
 }
 
 h1{
-	color: var(--white);
+	color: var(--black);
 	font-size: var(--h1);
 }
 
@@ -28,6 +28,7 @@ button{
 	font-weight: 700;
 }
 
+
 .carita_panfilo, #respond{
 	text-align: center;
 }
@@ -36,4 +37,44 @@ button{
 	height: 50px;
 	width: 510px;
 }
+
+.contenedor{
+	width: 100%;
+	position: relative;
+	height: 700px;
+}
+
+.botones{
+	font-size: 30px;
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, .7);
+	text-align: center;
+	font-weight: bold;
+	position: absolute;
+	color: #fff;
+	box-shadow: 0 0 10px rgba(255, 255, 255, .6);
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.botones:hover{
+	cursor: pointer;
+	transform: scale(1.2.1.2);
+}
+
+.atras{
+	left:  2%;
+	top: calc(50% - 70px);
+}
+
+.adelante{
+	right: 2%;
+	top: calc(50% - 70px);
+}
+
+
 

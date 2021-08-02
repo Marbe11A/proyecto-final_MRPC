@@ -6,6 +6,8 @@ Estructura:
 Head:
 a)Logotipo del canal de YouTube oficial "UNID Tv" https://www.youtube.com/channel/UCCiOVxotddWHBrTeRdz7dGQ 
 b)Reel (banner´s) con links de avisos de la UNID Campus Toluca
+https://programacion.net/articulo/como_crear_un_carrusel_de_imagenes_con_bootstrap_1807 
+https://youtu.be/N7JXmnaVWL0
 Body:
 a)Mascota "Uriel" Lobo rojo dando la bienvenida (video de Youtube)
 b)Forms con AI recabando los siguientes datos:
