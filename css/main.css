@@ -54,7 +54,7 @@ button{
 	text-align: center;
 	font-weight: bold;
 	position: absolute;
-	color: #fff;
+	color: #3B16D9;
 	box-shadow: 0 0 10px rgba(255, 255, 255, .6);
 	-webkit-transition: all .3s ease;
 	-o-transition: all .3s ease;
@@ -76,5 +76,37 @@ button{
 	top: calc(50% - 70px);
 }
 
+.container_cajas{
+	display: flex;
+}
 
+.caja1{
+	text-align: justify;
+	width: 50%;
+}
+
+.caja2{
+	text-align: justify;
+	width: 50%;
+}
+
+.caja3{
+	text-align: justify;
+	width: 50%;
+}
+
+.caja4{
+	text-align: justify;
+	width: 50%;
+}
+
+.caja5{
+	text-align: justify;
+	width: 50%;
+}
+
+.caja6{
+	text-align: justify;
+	width: 50%;
+}
 
